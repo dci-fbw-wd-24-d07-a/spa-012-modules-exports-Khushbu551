@@ -1,6 +1,6 @@
 import { day, month, year, output } from "./elements.js";
 
-function checkValid() {
+export function checkValid() {
   // Check the HTML element validity
   if (!day.validity.valid) {
     return false;
@@ -15,7 +15,7 @@ function checkValid() {
   return true;
 }
 
-function update() {
+export function update() {
   // Guard clause to validate user inputs
   if (!checkValid()) {
     return;
@@ -31,3 +31,4 @@ function update() {
 }
 
 // ???
+// export {checkValid, update}
